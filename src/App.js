@@ -29,7 +29,7 @@ function App() {
 
   return (
     <div className="App">
-      <p style={{ fontSize: "2em" }}>Current time:</p>
+      <p style={{ fontSize: "2em", color: "rgb(219, 204, 204)" }}>¿Qué hora es?</p>
       <div className="clock">
         <Clock className="clock-div" secondHandWidth={0} hourHandWidth={7} minuteHandLength={90} value={value} />
       </div>
