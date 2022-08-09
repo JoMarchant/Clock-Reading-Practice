@@ -33,16 +33,18 @@ function App() {
       <div className="clock">
         <Clock className="clock-div" secondHandWidth={0} hourHandWidth={7} minuteHandLength={90} value={value} />
       </div>
-      {show &&
-        <div className="time">
-          <p><strong>{value.toLocaleTimeString()}</strong></p>
-        </div>
-      }
       <br />
       <br />
       {show
         ? <button onClick={newTime}>Nueva hora</button>
         : <button onClick={showTime}>Mostrar</button>
+      }
+      <br />
+      <br />
+      {show &&
+        <div className="time">
+          <p style={{ fontSize: "6em" }}><strong>{value.toLocaleTimeString()}</strong></p>
+        </div>
       }
 
     </div>
